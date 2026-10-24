@@ -1,0 +1,98 @@
+
+/* 1. Configuración general de la página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f0e9;
+    color: #26332d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. Tarjeta principal */
+main {
+    width: 100%;
+    max-width: 520px;
+    padding: 32px;
+
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+}
+
+/* 3. Título de bienvenida */
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: #1f684b;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+/* 4. Mensaje */
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* 5. Fotografía */
+img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+
+    margin: 24px auto;
+    border-radius: 14px;
+}
+
+/* 6. Botón */
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: #1f684b;
+    color: #ffffff;
+
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174d38;
+}
+
+button:focus-visible {
+    outline: 3px solid #d4a64a;
+    outline-offset: 4px;
+}
+
+/* 7. Adaptación a celulares */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    main {
+        padding: 24px 18px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
